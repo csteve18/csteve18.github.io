@@ -289,7 +289,8 @@ if (!('webkitSpeechRecognition' in window)) {
         interim_transcript += event.results[i][0].transcript;
       }
     }
-    final_transcript = capitalize(final_transcript)+"hello";
+    final_transcript += final_transcript + "hello";
+    final_transcript = capitalize(final_transcript);
     final_span.innerHTML = linebreak(final_transcript);
     interim_span.innerHTML = linebreak(interim_transcript);
     if (final_transcript || interim_transcript) {
@@ -387,5 +388,18 @@ function showButtons(style) {
   email_button.style.display = style;
   copy_info.style.display = 'none';
   email_info.style.display = 'none';
+}
+
+function word_count(str){
+ if(str.length == 0){
+  return 0;
+ } else {
+  return str.match(/\S+/g).length;
+ }
+}
+
+function array_sum(arr){
+ return arr.reduce(function(a, b)
+ {return a+b});
 }
 </script>
