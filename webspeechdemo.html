@@ -286,6 +286,7 @@ if (!('webkitSpeechRecognition' in window)) {
     for (var i = event.resultIndex; i < event.results.length; ++i) {
       if (event.results[i].isFinal) {
         final_transcript += event.results[i][0].transcript;
+        final_transcript += "hello";
       } else {
         interim_transcript += event.results[i][0].transcript;
       }
@@ -297,7 +298,6 @@ if (!('webkitSpeechRecognition' in window)) {
       showButtons('inline-block');
     }
   };
-  final_transcript += 'hello';
 }
 
 function upgrade() {
