@@ -285,7 +285,6 @@ if (!('webkitSpeechRecognition' in window)) {
     for (var i = event.resultIndex; i < event.results.length; ++i) {
       if (event.results[i].isFinal) {
         final_transcript += event.results[i][0].transcript;
-        final_transcript += "the";
       } else {
         interim_transcript += event.results[i][0].transcript;
       }
@@ -389,7 +388,7 @@ function showButtons(style) {
   copy_info.style.display = 'none';
   email_info.style.display = 'none';
 }
-
+/*
 function word_count(str){
  if(str.length == 0){
   return 0;
@@ -401,5 +400,5 @@ function word_count(str){
 function array_sum(arr){
  return arr.reduce(function(a, b)
  {return a+b});
-}
+}*/
 </script>
