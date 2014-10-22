@@ -413,11 +413,11 @@ function categories(){
  if(number >= 188){
   return "You're speaking too fast";
  }
- else if(number < 188 || number > 133){
-  return "You're speaking perfectly!!!";
- }
- else if(number <= 133){
+ if(number <= 133){
   return "You're speaking too slowly";
+ }
+ if(number < 188 || number > 133){
+  return "You're speaking perfectly!!!";
  }
 }
 </script>
