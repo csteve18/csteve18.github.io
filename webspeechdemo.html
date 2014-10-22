@@ -392,17 +392,4 @@ function showButtons(style) {
   copy_info.style.display = 'none';
   email_info.style.display = 'none';
 }
-function get_word_count(str){
- if(str.length == 0){
-  return 0;
- } else{
-  return str.match(/\S+g).length;
- }
-}
-function calculate_time(str, start, end){
- var total = end - start;
- var x = total/60000;
- var length = get_word_count(str);
- return round(x)*length;
-}
 </script>
