@@ -407,7 +407,8 @@ function get_rate(){
  var time = (d.getTime() - start_timestamp)/60000;
  return x/time;
 }
-function categories(number){
+function categories(){
+ var number = get_rate();
  if(number >= 175){
   return "You're speaking too fast";
  }
