@@ -217,6 +217,8 @@ function updateCountry() {
   select_dialect.style.visibility = list[1].length == 1 ? 'hidden' : 'visible';
 }
 
+var start;
+var end;
 var create_email = false;
 var final_transcript = '';
 var recognizing = false;
@@ -281,6 +283,8 @@ if (!('webkitSpeechRecognition' in window)) {
   };
 
   recognition.onresult = function(event) {
+   var d = new Date();
+   start = d.getTime();
     var interim_transcript = '';
     for (var i = event.resultIndex; i < event.results.length; ++i) {
       if (event.results[i].isFinal) {
@@ -296,9 +300,14 @@ if (!('webkitSpeechRecognition' in window)) {
       showButtons('inline-block');
     }
   };
-}
-recognition.calculateTime = function(event){
- document.write("hello");
+  recognition.onresult = function(event){
+   var x = get_word_count(final_transcript);
+   var d = new Date();
+   end = d.getTime();
+   
+   calculate_rate(x, start, end);
+   
+  };
 }
 
 function upgrade() {
@@ -390,5 +399,22 @@ function showButtons(style) {
   email_button.style.display = style;
   copy_info.style.display = 'none';
   email_info.style.display = 'none';
+}
+
+function get_word_count(str){
+ if(str.length == 0){
+ return 0;
+ }
+ else {
+  return str.match(/\S+g).length;
+ }
+ function calculate_rate(str, start, end){
+  var total = end - start;
+  var rate_part = (60000/total);
+  var x = get_word_count(str);
+  return x*rate_part;
+  
+ }
+ 
 }
 </script>
