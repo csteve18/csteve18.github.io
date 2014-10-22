@@ -289,9 +289,7 @@ if (!('webkitSpeechRecognition' in window)) {
     for (var i = event.resultIndex; i < event.results.length; ++i) {
       if (event.results[i].isFinal) {
         final_transcript += event.results[i][0].transcript;
-        var d = new Date();
-        end = d.getTime();
-        document.write(get_rate(final_transcript,start,end));
+        document.write(get_rate(final_transcript,start));
       } else {
         interim_transcript += event.results[i][0].transcript;
       }
@@ -403,8 +401,8 @@ function get_word_count(str) {
  }
 }
 
-function get_rate(str, t1, t2){
- var total = t2 - t1;
+function get_rate(str, t1){
+ var total = d.getTime() - t1;
  var adj_total = total/60000;
  var number_words = get_word_count(str);
  return (round(number_words/adj_total));
