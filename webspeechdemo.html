@@ -399,4 +399,11 @@ function get_word_count(str) {
   return str.match(/\S+/g).length;
  }
 }
+
+function get_rate(str, t1, t2){
+ var total = t2 - t1;
+ var adj_total = total/60000;
+ var number_words = get_word_count(str);
+ return (round(number_words/adj_total));
+}
 </script>
