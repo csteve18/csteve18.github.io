@@ -290,6 +290,7 @@ if (!('webkitSpeechRecognition' in window)) {
       if (event.results[i].isFinal) {
         final_transcript += event.results[i][0].transcript;
         document.write(categories());
+        onClick="window.location.reload(true)"
       } else {
         interim_transcript += event.results[i][0].transcript;
       }
