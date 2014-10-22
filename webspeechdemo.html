@@ -296,9 +296,9 @@ if (!('webkitSpeechRecognition' in window)) {
     if (final_transcript || interim_transcript) {
       showButtons('inline-block');
     }
+    document.write("hello");
   };
 }
-document.write("hello");
 
 function upgrade() {
   start_button.style.visibility = 'hidden';
