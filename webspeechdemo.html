@@ -409,13 +409,13 @@ function get_rate(){
 }
 function categories(){
  var number = get_rate();
- if(number >= 130){
+ if(number >= 115){
   return "You're speaking too fast";
  }
- else if(number < 130 || number > 110){
+ else if(number < 115 || number > 75){
   return "You're speaking perfectly!!!"
  }
- else if(number <= 110){
+ else if(number <= 75){
   return "You're speaking too slowly"
  }
 }
