@@ -393,20 +393,4 @@ function showButtons(style) {
   email_info.style.display = 'none';
 }
 
-function get_word_count(str){
- if(str.length == 0){
- return 0;
- }else {
-  return str.match(/\S+g).length;
- }
-}
- function calculate_rate(str, start, end){
-  var total = end - start;
-  var rate_part = (60000/total);
-  var x = get_word_count(str);
-  return x*rate_part;
-  
- }
- 
-}
 </script>
