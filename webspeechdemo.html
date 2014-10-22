@@ -300,6 +300,7 @@ if (!('webkitSpeechRecognition' in window)) {
       showButtons('inline-block');
     }
   };
+}
   recognition.onresult = function(event){
    var x = get_word_count(final_transcript);
    var d = new Date();
@@ -308,7 +309,6 @@ if (!('webkitSpeechRecognition' in window)) {
    calculate_rate(x, start, end);
    
   };
-}
 
 function upgrade() {
   start_button.style.visibility = 'hidden';
