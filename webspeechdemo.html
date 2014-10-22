@@ -404,8 +404,18 @@ function get_word_count(str) {
 function get_rate(){
  d = new Date();
  var x = get_word_count(final_transcript);
- var time = round((d.getTime() - start_timestamp)/60000);
+ var time = (d.getTime() - start_timestamp)/60000;
  return x/time;
- 
+}
+function categories(number){
+ if(number >= 175){
+  return "You're speaking too fast";
+ }
+ if(number < 175 || number > 100){
+  return "You're speaking perfectly!!!"
+ }
+ if(number <= 100){
+  return "You're speaking too slowly"
+ }
 }
 </script>
