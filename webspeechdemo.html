@@ -286,8 +286,6 @@ if (!('webkitSpeechRecognition' in window)) {
     for (var i = event.resultIndex; i < event.results.length; ++i) {
       if (event.results[i].isFinal) {
         final_transcript += event.results[i][0].transcript;
-        get_rate(final_transcript, start_timestamp, event.timeStamp);
-
       } else {
         interim_transcript += event.results[i][0].transcript;
       }
