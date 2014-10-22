@@ -402,4 +402,15 @@ function array_sum(arr){
   return a+b
  });
 }
+function timer(){
+ var d = new Date();
+ var n = d.getTime();
+ return n;
+}
+function get_rate(str, t1, t2){
+ var str_length = get_word_count(str);
+ var total_time = t2 - t1;
+ var x = round(60/total_time);
+ return x*str_length;
+}
 </script>
