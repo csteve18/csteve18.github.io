@@ -405,7 +405,7 @@ function get_rate(){
  d = new Date();
  var x = get_word_count(final_transcript);
  var time = (d.getTime() - start_timestamp)/60000;
- return time*x;
+ return round(x/time);
  
 }
 </script>
