@@ -2,10 +2,10 @@ body {
   font-family = "Times New Roman";
 }
 nav{
+  background-color: #FF0000;
   float: top;
   height: 50px;
   margin: 0px;
-  background-color: "blue";
 }
 h1 {
   
