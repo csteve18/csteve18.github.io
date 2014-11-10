@@ -1,11 +1,11 @@
 body {
   font-family = "Times New Roman";
 }
-.links{
+nav{
   float: top;
   height: 50px;
   margin: 0px;
-  background-color = "blue";
+  background-color: "blue";
 }
 h1 {
   
