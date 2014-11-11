@@ -8,6 +8,11 @@ body {
   height: 50px;
   margin: 0px;
 }
+#links_list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 h1 {
   
 }
