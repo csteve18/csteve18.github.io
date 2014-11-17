@@ -4,10 +4,14 @@ body {
 h1 {
   text-align: center;
   padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+
 }
 h2 {
   text-align: center;
   padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  
 }
 #contactInfoBlock {
   margin-left: auto;
