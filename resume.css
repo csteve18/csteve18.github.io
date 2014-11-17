@@ -1,6 +1,12 @@
 body {
   background-color: white;
 }
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
 #contactInfoBlock {
   margin-left: auto;
   margin-right: auto;
