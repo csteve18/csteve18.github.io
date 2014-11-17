@@ -2,7 +2,10 @@ body {
   background-color: white;
 }
 ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+ul .bullets {
+  list-style-type: circle;
 }
