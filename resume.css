@@ -1,11 +1,9 @@
 body {
   background-color: white;
 }
-ul {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
+ul.bullet {
+    list-style-type: circle;
 }
-ul.bullets {
-  list-style-type: circle;
+ul {
+list-style-type: none;
 }
