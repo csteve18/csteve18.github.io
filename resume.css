@@ -6,6 +6,6 @@ ul {
   padding: 0px;
   margin: 0px;
 }
-ul .bullets {
+ul.bullets {
   list-style-type: circle;
 }
