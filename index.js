@@ -1,3 +1,3 @@
-function myfunction(a, b){
-  return a * b;
+function pineapple(){
+  alert("pineapple");
 }
