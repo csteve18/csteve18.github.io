@@ -14,6 +14,7 @@
 </div>
 <div id = "header"> 
 	<h1> Katie Stevens' Webpage</h1>
+	<h2> Hello </h2>
 </div>
 <div>
 	<button type = "button"
