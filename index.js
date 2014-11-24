@@ -1,3 +1,3 @@
-<script type = "text/javascript">
-document.write("hello");
-</script>
+function hello(a, b){
+  return a * b;
+}
