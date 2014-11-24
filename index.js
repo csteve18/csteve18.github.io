@@ -1,3 +1,3 @@
-function hello(a, b){
+function myfunction(a, b){
   return a * b;
 }
