@@ -1,3 +1,0 @@
-function pineapple(){
-  alert("pineapple");
-}
