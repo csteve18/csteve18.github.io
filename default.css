@@ -1,0 +1,40 @@
+  body{
+	  font-family:'Noto Sans', Arial, Helvetica, sans-serif;
+  }
+ .navbar{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	border-top: 0; 
+	background-color:white;
+}
+ .navlist{
+	list-style-type: none;
+	margin:5px;
+	padding:5px;
+	overflow:hidden;
+} 
+
+.navnutella, .navoperations, .navcgdev, .navdepartments{
+	float:left;
+	margin:10px;
+	
+}
+.submenuops{
+	display:none;
+	position:absolute;
+	background-color:white;
+}
+.submenuops li{
+	list-style-type:none;
+}
+.submenucgdev{
+	display:none;
+	position:absolute;
+	background-color:white;
+}
+.submenucgdev li{
+	list-style-type:none;
+}
