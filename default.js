@@ -1,14 +1,4 @@
-$(document).ready(function (){
-	$('.navbar').find('.navoperations').hover(
-		function(){
-			$(this).children('.submenuops').slideToggle(10);
-		}
-	);
-	$('.navbar').find('.navcgdev').hover(
-		function(){
-			$(this).children('.submenucgdev').slideToggle(10);
-		}
-	);
+  $(document).ready(function (){
 	var stickyNavTop = $('.navbar').offset().top;
 	var stickyNav = function(){
 		var scrollTop = $(window).scrollTop();
@@ -22,5 +12,5 @@ $(document).ready(function (){
 	stickyNav();
 	$(window).scroll(function(){
 		stickyNav();
-	});
-});
+	});	  
+  });
